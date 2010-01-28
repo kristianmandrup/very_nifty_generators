@@ -30,5 +30,13 @@ Config:
 Layout:
     $ script/generate nifty:layout
 
+Executables: Available anywhere without having to do gem bundle! 
+  nifty_auth
+  nifty_config
+  nifty_layout
+  nifty_scaffold [model:string] [attributes:hash]
+
+Example  
+$ nifty_scaffold Person name:string birthdate:date
 
     

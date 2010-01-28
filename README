@@ -4,6 +4,19 @@ The generators use the very DRY rails 3 conventions as described by ryanb
 http://ryandaigle.com/articles/2009/8/10/what-s-new-in-edge-rails-default-restful-rendering
 http://ryandaigle.com/articles/2009/8/6/what-s-new-in-edge-rails-cleaner-restful-controllers-w-respond_with
 
-More nifty generators for rails 3 are in the pipeline…
+The gem comes with executables that can be found in the /bin folder
+  nifty_auth
+  nifty_config
+  nifty_layout
+  nifty_scaffold [model:string] [attributes:hash]
+
+Example  
+$ nifty_scaffold Person name:string birthdate:date
+
+The executables are installed when the gem is installed on your system
+$ sudo gem install very_nifty_generators
+
+Note: More nifty generators for rails 3 are in the pipeline… feel free to come with suggestions.
 
 Also check out my monog_model_r3 gem with generators for use with mongo DB ;)
+
