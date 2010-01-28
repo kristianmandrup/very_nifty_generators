@@ -1,11 +1,34 @@
 1. Create new Rails 3 project
 2. In Gemfile add
-    gem 'very_nifty_generators'
+  gem "rails", "3.0.pre"
+  gem "very_nifty_generators"
+
 3. In console run
     $ gem bundle
 
 Will install the very_nifty_generators gem in your rails 3 project
 
+4. Check installation
+    $ script/generate
+
+Nifty:
+  nifty:authentication
+  nifty:config
+  nifty:layout
+  nifty:scaffold
+
+
 Scaffold:
- In console run scaffolder
     $ script/generate nifty:scaffold post name:string
+
+Authentication:
+    $ script/generate nifty:authentication
+
+Config:
+    $ script/generate nifty:config
+
+Layout:
+    $ script/generate nifty:layout
+
+
+    
