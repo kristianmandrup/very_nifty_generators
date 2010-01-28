@@ -1,5 +1,6 @@
 require 'generators/nifty'
 require 'rails/generators/migration'
+require 'active_record'
 
 module Nifty
   module Generators
@@ -140,7 +141,7 @@ module Nifty
         # FIXME: Should be proxied to ActiveRecord::Generators::Base
         # Implement the required interface for Rails::Generators::Migration.
         def next_migration_number(dirname) #:nodoc:
-          if ActiveRecord::Base.timestamped_migrations
+          if ::ActiveRecord::Base.timestamped_migrations
             Time.now.utc.strftime("%Y%m%d%H%M%S")
           else
             "%.3d" % (current_migration_number(dirname) + 1)
