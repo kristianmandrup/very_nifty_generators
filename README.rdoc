@@ -1,7 +1,14 @@
 = very_nifty_generators
 
 Rails 3 nifty generators based on efforts by ryanb and dvyjones.
-The goal is to use the very DRY rails 3 conventions.
+The generators use the very DRY rails 3 conventions as described by ryanb
+
+http://ryandaigle.com/articles/2009/8/10/what-s-new-in-edge-rails-default-restful-rendering
+http://ryandaigle.com/articles/2009/8/6/what-s-new-in-edge-rails-cleaner-restful-controllers-w-respond_with
+
+More nifty generators for rails 3 are in the pipeline…
+
+Also check out my monog_model_r3 gem with generators for use with mongo DB ;)
 
 == Note on Patches/Pull Requests
  
