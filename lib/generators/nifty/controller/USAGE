@@ -1,0 +1,4 @@
+Examples:
+    script/generate nifty:scaffold post index create update
+        
+        Will create a controller called "posts" it will contain the actions index, create and update which will all use the DRY rails 3 responder pattern.

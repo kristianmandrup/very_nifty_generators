@@ -14,7 +14,7 @@ begin
     gem.files=FileList['lib/**/*.*', 'bin/*']  
     
     gem.default_executable = %q{nifty_scaffold}
-    gem.executables = ["nifty_scaffold", "nifty_auth", "nifty_config", "nifty_layout"]          
+    gem.executables = ["nifty_scaffold", "nifty_auth", "nifty_config", "nifty_layout", "nifty_controller"]          
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
