@@ -10,15 +10,18 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup, dvyjones"]
   s.date = %q{2010-01-28}
+  s.default_executable = %q{nifty_scaffold}
   s.description = %q{Rails 3 nifty generators, based on efforts by ryanb and dvyjones}
   s.email = %q{kmandrup@gmail.com}
+  s.executables = ["nifty_scaffold"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README",
      "README.rdoc"
   ]
   s.files = [
-    "lib/generators/nifty.rb",
+    "bin/nifty_scaffold",
+     "lib/generators/nifty.rb",
      "lib/generators/nifty/authentication/authentication_generator.rb",
      "lib/generators/nifty/authentication/templates/authentication.rb",
      "lib/generators/nifty/authentication/templates/authlogic_session.rb",
