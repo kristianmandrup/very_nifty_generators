@@ -9,19 +9,21 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup, dvyjones"]
-  s.date = %q{2010-01-28}
+  s.date = %q{2010-01-29}
   s.default_executable = %q{nifty_scaffold}
   s.description = %q{Rails 3 nifty generators, based on efforts by ryanb and dvyjones}
   s.email = %q{kmandrup@gmail.com}
-  s.executables = ["nifty_scaffold", "nifty_auth", "nifty_config", "nifty_layout"]
+  s.executables = ["nifty_scaffold", "nifty_auth", "nifty_config", "nifty_layout", "nifty_controller"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README",
-     "README.rdoc"
+     "README.rdoc",
+     "TODO"
   ]
   s.files = [
     "bin/nifty_auth",
      "bin/nifty_config",
+     "bin/nifty_controller",
      "bin/nifty_layout",
      "bin/nifty_scaffold",
      "lib/generators/nifty.rb",
@@ -50,6 +52,16 @@ Gem::Specification.new do |s|
      "lib/generators/nifty/authentication/templates/views/haml/signup.html.haml",
      "lib/generators/nifty/config/config_generator.rb",
      "lib/generators/nifty/config/templates/config.yml",
+     "lib/generators/nifty/controller/controller_generator.rb",
+     "lib/generators/nifty/controller/templates/_controller.rb",
+     "lib/generators/nifty/controller/templates/actions/create.rb",
+     "lib/generators/nifty/controller/templates/actions/destroy.rb",
+     "lib/generators/nifty/controller/templates/actions/edit.rb",
+     "lib/generators/nifty/controller/templates/actions/index.rb",
+     "lib/generators/nifty/controller/templates/actions/new.rb",
+     "lib/generators/nifty/controller/templates/actions/show.rb",
+     "lib/generators/nifty/controller/templates/actions/update.rb",
+     "lib/generators/nifty/controller/templates/controller.rb",
      "lib/generators/nifty/layout/layout_generator.rb",
      "lib/generators/nifty/layout/templates/helper.rb",
      "lib/generators/nifty/layout/templates/layout.html.erb",
