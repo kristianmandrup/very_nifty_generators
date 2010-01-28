@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{very_nifty_generators}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup, dvyjones"]
@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.email = %q{kmandrup@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
+     "README",
      "README.rdoc"
   ]
   s.files = [
@@ -21,6 +22,7 @@ Gem::Specification.new do |s|
      "lib/generators/nifty/authentication/authentication_generator.rb",
      "lib/generators/nifty/authentication/templates/authentication.rb",
      "lib/generators/nifty/authentication/templates/authlogic_session.rb",
+     "lib/generators/nifty/authentication/templates/fixtures.yml",
      "lib/generators/nifty/authentication/templates/migration.rb",
      "lib/generators/nifty/authentication/templates/sessions_controller.rb",
      "lib/generators/nifty/authentication/templates/sessions_helper.rb",
@@ -36,9 +38,18 @@ Gem::Specification.new do |s|
      "lib/generators/nifty/authentication/templates/user.rb",
      "lib/generators/nifty/authentication/templates/users_controller.rb",
      "lib/generators/nifty/authentication/templates/users_helper.rb",
+     "lib/generators/nifty/authentication/templates/views/erb/login.html.erb",
+     "lib/generators/nifty/authentication/templates/views/erb/signup.html.erb",
+     "lib/generators/nifty/authentication/templates/views/haml/login.html.haml",
+     "lib/generators/nifty/authentication/templates/views/haml/signup.html.haml",
      "lib/generators/nifty/config/config_generator.rb",
+     "lib/generators/nifty/config/templates/config.yml",
      "lib/generators/nifty/layout/layout_generator.rb",
      "lib/generators/nifty/layout/templates/helper.rb",
+     "lib/generators/nifty/layout/templates/layout.html.erb",
+     "lib/generators/nifty/layout/templates/layout.html.haml",
+     "lib/generators/nifty/layout/templates/stylesheet.css",
+     "lib/generators/nifty/layout/templates/stylesheet.sass",
      "lib/generators/nifty/scaffold/scaffold_generator.rb",
      "lib/generators/nifty/scaffold/templates/actions/create.rb",
      "lib/generators/nifty/scaffold/templates/actions/destroy.rb",
@@ -48,6 +59,7 @@ Gem::Specification.new do |s|
      "lib/generators/nifty/scaffold/templates/actions/show.rb",
      "lib/generators/nifty/scaffold/templates/actions/update.rb",
      "lib/generators/nifty/scaffold/templates/controller.rb",
+     "lib/generators/nifty/scaffold/templates/fixtures.yml",
      "lib/generators/nifty/scaffold/templates/helper.rb",
      "lib/generators/nifty/scaffold/templates/migration.rb",
      "lib/generators/nifty/scaffold/templates/model.rb",
@@ -77,7 +89,17 @@ Gem::Specification.new do |s|
      "lib/generators/nifty/scaffold/templates/tests/testunit/actions/show.rb",
      "lib/generators/nifty/scaffold/templates/tests/testunit/actions/update.rb",
      "lib/generators/nifty/scaffold/templates/tests/testunit/controller.rb",
-     "lib/generators/nifty/scaffold/templates/tests/testunit/model.rb"
+     "lib/generators/nifty/scaffold/templates/tests/testunit/model.rb",
+     "lib/generators/nifty/scaffold/templates/views/erb/_form.html.erb",
+     "lib/generators/nifty/scaffold/templates/views/erb/edit.html.erb",
+     "lib/generators/nifty/scaffold/templates/views/erb/index.html.erb",
+     "lib/generators/nifty/scaffold/templates/views/erb/new.html.erb",
+     "lib/generators/nifty/scaffold/templates/views/erb/show.html.erb",
+     "lib/generators/nifty/scaffold/templates/views/haml/_form.html.haml",
+     "lib/generators/nifty/scaffold/templates/views/haml/edit.html.haml",
+     "lib/generators/nifty/scaffold/templates/views/haml/index.html.haml",
+     "lib/generators/nifty/scaffold/templates/views/haml/new.html.haml",
+     "lib/generators/nifty/scaffold/templates/views/haml/show.html.haml"
   ]
   s.homepage = %q{http://github.com/kristianmandrup/very_nifty_generators}
   s.rdoc_options = ["--charset=UTF-8"]
