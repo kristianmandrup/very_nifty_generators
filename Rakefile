@@ -11,7 +11,7 @@ begin
     gem.homepage = "http://github.com/kristianmandrup/very_nifty_generators"
     gem.authors = ["Kristian Mandrup, dvyjones"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
-    gem.files=FileList['lib/**/*.rb']    
+    gem.files=FileList['lib/**/*.*']    
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
