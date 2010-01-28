@@ -24,15 +24,18 @@ module Nifty
       class_option :shoulda, :desc => 'Use shoulda for test files.', :group => 'Test framework',
         :type => :boolean
 
+        
+
       def initialize(*args, &block)
         super
 
+        @my_options ||= {}
         @controller_actions = []
         @model_attributes = []
 
         args_for_c_m.each do |arg|
           if arg == '!'
-            options[:invert] = true
+            @my_options[:invert] = true
           elsif arg.include?(':')
             @model_attributes << Rails::Generators::GeneratedAttribute.new(*arg.split(':'))
           else
@@ -45,12 +48,12 @@ module Nifty
         @controller_actions.uniq!
         @model_attributes.uniq!
 
-        if options.invert? || @controller_actions.empty?
+        if options.do_invert? || @controller_actions.empty?
           @controller_actions = all_actions - @controller_actions
         end
 
         if @model_attributes.empty?
-          options[:skip_model] = true # default to skipping model if no attributes passed
+          @my_options[:skip_model] = true # default to skipping model if no attributes passed
           if model_exists?
             model_columns_for_attributes.each do |column|
               @model_attributes << Rails::Generators::GeneratedAttribute.new(column.name.to_s, column.type.to_s)
@@ -61,8 +64,17 @@ module Nifty
         end
       end
 
+      def do_skip_model?
+        options.skip_model? || @my_options[:skip_model]
+      end
+
+      def do_invert?
+        options.invert? || @my_options[:invert]
+      end
+
+
       def create_model
-        unless options.skip_model?
+        unless do_skip_model? 
           template 'model.rb', "app/models/#{singular_name}.rb"
           if options.rspec?
             template "tests/rspec/model.rb", "spec/models/#{singular_name}_spec.rb"
@@ -75,7 +87,7 @@ module Nifty
       end
 
       def create_migration
-        unless options.skip_model? || options.skip_migration?
+        unless do_skip_model? || options.skip_migration?
           migration_template 'migration.rb', "db/migrate/create_#{plural_name}.rb"
         end
       end
