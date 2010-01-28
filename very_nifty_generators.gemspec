@@ -13,14 +13,17 @@ Gem::Specification.new do |s|
   s.default_executable = %q{nifty_scaffold}
   s.description = %q{Rails 3 nifty generators, based on efforts by ryanb and dvyjones}
   s.email = %q{kmandrup@gmail.com}
-  s.executables = ["nifty_scaffold"]
+  s.executables = ["nifty_scaffold", "nifty_auth", "nifty_config", "nifty_layout"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README",
      "README.rdoc"
   ]
   s.files = [
-    "bin/nifty_scaffold",
+    "bin/nifty_auth",
+     "bin/nifty_config",
+     "bin/nifty_layout",
+     "bin/nifty_scaffold",
      "lib/generators/nifty.rb",
      "lib/generators/nifty/authentication/authentication_generator.rb",
      "lib/generators/nifty/authentication/templates/authentication.rb",
