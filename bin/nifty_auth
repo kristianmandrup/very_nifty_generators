@@ -20,8 +20,6 @@ if %w(--version -v).include? ARGV.first
   exit(0)
 end
 
-ARGV << "--help" if ARGV.empty?
-
 require 'rails/generators'
 require 'generators/nifty/authentication/authentication_generator'
 
