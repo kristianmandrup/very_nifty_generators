@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "very_nifty_generators"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Rails 3 nifty generators}
+    gem.description = %Q{Rails 3 nifty generators, based on efforts by ryanb and dvyjones}
     gem.email = "kmandrup@gmail.com"
     gem.homepage = "http://github.com/kristianmandrup/very_nifty_generators"
-    gem.authors = ["Kristian Mandrup"]
+    gem.authors = ["Kristian Mandrup, dvyjones"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.files=FileList['lib/**/*.rb']    
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

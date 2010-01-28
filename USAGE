@@ -1,0 +1,11 @@
+1. Create new Rails 3 project
+2. In Gemfile add
+    gem 'very_nifty_generators'
+3. In console run
+    $ gem bundle
+
+Will install the very_nifty_generators gem in your rails 3 project
+
+Scaffold:
+ In console run scaffolder
+    $ script/generate nifty:scaffold post name:string
