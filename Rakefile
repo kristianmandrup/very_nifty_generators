@@ -11,10 +11,10 @@ begin
     gem.homepage = "http://github.com/kristianmandrup/very_nifty_generators"
     gem.authors = ["Kristian Mandrup, dvyjones"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
-    gem.files=FileList['lib/**/*.*', 'bin/*']  
+    gem.files=FileList['lib/**/*', 'bin/*']  
     
     gem.default_executable = %q{nifty_scaffold}
-    gem.executables = ["nifty_scaffold", "nifty_auth", "nifty_config", "nifty_layout", "nifty_controller"]          
+    gem.executables = ["nifty_scaffold", "nifty_auth", "nifty_config", "nifty_layout", "nifty_controller", "nifty_app"]          
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

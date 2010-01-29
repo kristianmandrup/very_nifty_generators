@@ -1,0 +1,28 @@
+# Edit this Gemfile to bundle your application's dependencies.
+<% if !dev_or_edge? %>
+gem "rails", "<%= Rails::VERSION::STRING %>"
+<% end -%>
+
+## Bundle edge rails:
+<%- if options.dev? -%>
+directory "<%= Rails::Generators::RAILS_DEV_PATH %>", :glob => "{*/,}*.gemspec"
+gem "rails", "<%= Rails::VERSION::STRING %>"
+<%- else -%>
+<%= "# " unless options.edge? %>gem "rails", :git => "git://github.com/rails/rails.git"
+<%- end -%>
+
+## Bundle the gems you use:
+# gem "aws-s3", :require_as => "aws/s3"
+
+# mongo db
+gem "mongo", "~> 0.18.2"
+gem "mongo_ext", "~> 0.18.2"
+# gem "mongo_mapper",  "~> 0.6.10 "
+# gem "mongoid"
+
+## Bundle gems used only in certain environments:
+only :test do
+  gem "rspec"
+  gem "webrat"
+  gem "cucumber"
+end
