@@ -7,13 +7,26 @@ http://ryandaigle.com/articles/2009/8/10/what-s-new-in-edge-rails-default-restfu
 http://ryandaigle.com/articles/2009/8/6/what-s-new-in-edge-rails-cleaner-restful-controllers-w-respond_with
 
 The gem comes with executables that can be found in the /bin folder
-  nifty_auth
-  nifty_config
-  nifty_layout
-  nifty_scaffold [model:string] [attributes:hash]
+ *  nifty_auth
+ *  nifty_config
+ *  nifty_layout
 
-Example  
+==  Scaffold
+
+nifty_scaffold [model:string] [attributes:hash]
+
 $ nifty_scaffold Person name:string birthdate:date
+
+== Application
+
+nifty_app [application name]
+
+$ nifty_app my_best_app
+
+Note: 
+The nifty_app is a bare-bones rails 3 app, without any prototype files, index file etc. This bare bones file is intended as a building-block for use with
+Rails application templates to add custom application logic, such as the use of prototype/jquery, testing frameworks, authentication etc.
+This bare-bones approach is meant to avoid having to first delete specific files from the default rails app created by the built-in rails app generator.  
 
 The executables are installed when the gem is installed on your system
 $ sudo gem install very_nifty_generators

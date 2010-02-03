@@ -17,12 +17,13 @@ gem "rails", "<%= Rails::VERSION::STRING %>"
 # mongo db
 gem "mongo", "~> 0.18.2"
 gem "mongo_ext", "~> 0.18.2"
-# gem "mongo_mapper",  "~> 0.6.10 "
-# gem "mongoid"
 
 ## Bundle gems used only in certain environments:
 only :test do
   gem "rspec"
   gem "webrat"
   gem "cucumber"
+  gem "cucumber-rails"
+  gem "pickle" 
+  gem "autotest-rails"    
 end

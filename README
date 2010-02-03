@@ -8,10 +8,16 @@ The gem comes with executables that can be found in the /bin folder
   nifty_auth
   nifty_config
   nifty_layout
+  
+Scaffold:  
   nifty_scaffold [model:string] [attributes:hash]
 
-Example  
-$ nifty_scaffold Person name:string birthdate:date
+  $ nifty_scaffold Person name:string birthdate:date
+
+Application:
+  nifty_app [application name]
+
+  $ nifty_app my_best_app
 
 The executables are installed when the gem is installed on your system
 $ sudo gem install very_nifty_generators

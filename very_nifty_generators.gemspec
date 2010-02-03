@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{very_nifty_generators}
-  s.version = "0.1.2"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup, dvyjones"]
-  s.date = %q{2010-01-29}
+  s.date = %q{2010-01-30}
   s.default_executable = %q{nifty_scaffold}
   s.description = %q{Rails 3 nifty generators, based on efforts by ryanb and dvyjones}
   s.email = %q{kmandrup@gmail.com}

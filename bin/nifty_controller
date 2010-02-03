@@ -22,6 +22,7 @@ end
 
 ARGV << "--help" if ARGV.empty?
 
+require 'rails'
 require 'rails/generators'
 require 'generators/nifty/controller/controller_generator'
 
