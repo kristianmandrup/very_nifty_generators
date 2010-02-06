@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{very_nifty_generators}
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup, dvyjones"]
-  s.date = %q{2010-01-30}
+  s.date = %q{2010-02-04}
   s.default_executable = %q{nifty_scaffold}
   s.description = %q{Rails 3 nifty generators, based on efforts by ryanb and dvyjones}
   s.email = %q{kmandrup@gmail.com}
@@ -31,13 +31,13 @@ Gem::Specification.new do |s|
      "lib/generators/nifty/app/USAGE",
      "lib/generators/nifty/app/app_generator.rb",
      "lib/generators/nifty/app/templates/Gemfile",
-     "lib/generators/nifty/app/templates/README",
      "lib/generators/nifty/app/templates/Rakefile",
      "lib/generators/nifty/app/templates/app/controllers/application_controller.rb",
      "lib/generators/nifty/app/templates/app/helpers/application_helper.rb",
      "lib/generators/nifty/app/templates/config.ru",
      "lib/generators/nifty/app/templates/config/application.rb",
      "lib/generators/nifty/app/templates/config/boot.rb",
+     "lib/generators/nifty/app/templates/config/database.yml",
      "lib/generators/nifty/app/templates/config/environment.rb",
      "lib/generators/nifty/app/templates/config/environments/development.rb.tt",
      "lib/generators/nifty/app/templates/config/environments/production.rb.tt",

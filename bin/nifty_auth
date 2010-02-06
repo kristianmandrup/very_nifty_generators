@@ -9,16 +9,10 @@ rescue LoadError
   $:.unshift File.expand_path('../../lib', __FILE__)
   $:.unshift File.expand_path('../../../activesupport/lib', __FILE__)
   $:.unshift File.expand_path('../../../actionpack/lib', __FILE__)
-  require 'rails/ruby_version_check'
+  require 'rails/ruby_version_check'  
 end
 
 Signal.trap("INT") { puts; exit }
-
-require 'rails/version'
-if %w(--version -v).include? ARGV.first
-  puts "Rails #{Rails::VERSION::STRING}"
-  exit(0)
-end
 
 require 'rails/generators'
 require 'generators/nifty/authentication/authentication_generator'

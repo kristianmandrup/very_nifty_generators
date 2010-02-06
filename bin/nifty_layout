@@ -14,12 +14,6 @@ end
 
 Signal.trap("INT") { puts; exit }
 
-require 'rails/version'
-if %w(--version -v).include? ARGV.first
-  puts "Rails #{Rails::VERSION::STRING}"
-  exit(0)
-end
-
 require 'rails/generators'
 require 'generators/nifty/layout/layout_generator'
 

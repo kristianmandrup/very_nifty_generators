@@ -32,6 +32,7 @@ module Nifty
       class_option :help, :type => :boolean, :aliases => "-h", :group => :rails,
                           :desc => "Show this help message and quit"
 
+
       def self.source_root 
         @source_root ||= File.expand_path(File.join(File.dirname(__FILE__), 'templates'))  
       end 
@@ -153,7 +154,7 @@ module Nifty
       end
 
       def bundle_if_dev_or_edge
-        run "gem bundle" if dev_or_edge?
+        run "bundle install" if dev_or_edge?
       end
 
       protected
